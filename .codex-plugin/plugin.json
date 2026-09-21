@@ -1,0 +1,39 @@
+{
+  "name": "coruma-agent-plugin",
+  "version": "0.1.0",
+  "description": "Read authorized Apple Health activity, sleep, workouts, heart rate, energy, and body measurements through Coruma.",
+  "author": {
+    "name": "Coruma",
+    "url": "https://app.coruma.app"
+  },
+  "homepage": "https://app.coruma.app",
+  "repository": "https://github.com/id49/coruma-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "coruma",
+    "apple-health",
+    "healthkit",
+    "health-data",
+    "mcp",
+    "workouts",
+    "sleep"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Coruma Health Data",
+    "shortDescription": "Read your authorized Apple Health history.",
+    "longDescription": "Connect AI assistants to Apple Health activity, sleep, workouts, heart rate, energy, body measurements, sync status, and optional workout routes through Coruma's private, read-only MCP server.",
+    "developerName": "Coruma",
+    "category": "Health & Fitness",
+    "capabilities": ["Read"],
+    "websiteURL": "https://app.coruma.app",
+    "privacyPolicyURL": "https://app.coruma.app/privacy",
+    "defaultPrompt": [
+      "Summarize my Apple Health activity from the last 7 days.",
+      "Compare my sleep this week with the previous week.",
+      "Check when my Coruma data last synchronized."
+    ],
+    "brandColor": "#173F35"
+  },
+  "mcpServers": "./.mcp.json"
+}

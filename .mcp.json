@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "coruma": {
+      "type": "http",
+      "url": "https://api.coruma.app/mcp"
+    }
+  }
+}

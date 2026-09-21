@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "coruma-agent-plugin",
+  "version": "0.1.0",
+  "description": "Read authorized Apple Health activity, sleep, workouts, heart rate, energy, and body measurements through Coruma.",
+  "author": {
+    "name": "Coruma",
+    "url": "https://app.coruma.app"
+  },
+  "homepage": "https://app.coruma.app",
+  "repository": "https://github.com/id49/coruma-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "coruma",
+    "apple-health",
+    "healthkit",
+    "health-data",
+    "mcp",
+    "workouts",
+    "sleep"
+  ]
+}

@@ -23,9 +23,22 @@ The plugin uses the hosted MCP endpoint at `https://api.coruma.app/mcp`. No API 
 
 ## Installation
 
-### Cursor and Grok Bot
+### Grok Bot
 
-Install the plugin from its marketplace listing when available. For local development, clone this repository into Cursor's local plugin directory and reload Cursor:
+After Coruma is available in the Grok Bot marketplace:
+
+1. Open **Plugins** in the Grok Bot sidebar. On mobile, open your avatar menu and select **Plugins**.
+2. Search for **Coruma Health Data** and select **Add**.
+3. Choose **Authorize** or **Authenticate** and complete the Coruma sign-in and consent flow in your browser.
+4. Return to Grok Bot and confirm that Coruma appears under **Marketplace → Yours → Installed**.
+
+If Grok Bot shows **Waiting for authorization**, choose **Reopen** and finish the authorization in the browser. Team administrators may need to allow Coruma before members can install it.
+
+Installing directly from a Git repository is not the Grok Bot installation flow. See the official [Grok Bot plugin guide](https://cursor.com/help/grok-bot/connect-plugins).
+
+### Cursor local development
+
+For local development before the marketplace listing is available, clone this repository into Cursor's local plugin directory and reload Cursor:
 
 ```text
 ~/.cursor/plugins/local/coruma-agent-plugin
@@ -33,11 +46,13 @@ Install the plugin from its marketplace listing when available. For local develo
 
 ### Grok Build
 
-Install from this repository while testing:
+Grok Build is the terminal coding agent and uses a separate CLI installation flow. Install Coruma directly from this public repository:
 
 ```bash
-grok plugin install id49/coruma-agent-plugin --trust
+grok plugin install coruma/coruma-agent-plugin --trust
 ```
+
+Review the repository before using `--trust`. After installation, open `/plugins` or start a new Grok Build session so the plugin is loaded. See the official [Grok Build plugins and marketplaces documentation](https://docs.x.ai/build/features/skills-plugins-marketplaces).
 
 ### MCP clients
 
